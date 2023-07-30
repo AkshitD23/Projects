@@ -1,0 +1,163 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="style.css" rel="stylesheet"/>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+                                
+                                
+                                
+                                
+                                <!--BODY-->
+<h1 id="heading"> <span>DISCUSSION PORTAL</span> </h1>
+
+
+
+<div class="row g-0">
+
+                                <!-- LEFTSIDE -->
+  <div class="col ">
+
+
+    <!-- BUTTTON AND INPUT -->
+    <div class="col ms-2" id="leftTopDiv" >
+      <button type="button" class="btn btn-primary  " id="activateRightSide">New question form</button>
+      <input type="text" id="search" class="mb-3" placeholder="search"/>
+    </div>
+
+
+    <div class="leftside greyColor" id="putHere">
+    </div>
+  </div>
+
+                              <!-- LEFTSIDE END-->
+
+
+                              <!-- VERTICAL LINE -->
+    <div class="vr"></div>
+                              <!-- VERTICAL LINE END-->
+
+
+
+
+
+
+                            <!-- RIGTHSIDE -->
+
+                            
+  <div class="col p-3">
+    <div class="rightside ms-3">
+                              <!--STARTING DIV-->
+      <div id="beforeClick">
+
+                              <!--HEADING-->
+      <h1 class="mt-4" id="rightSideHeading" class="fontchange" > Welcome to Discussion Portal !</h1>
+      <div id="rightSideHeadingHelper" class="fontchange" >Enter a Subject and Question to get started</div>
+                               <!--HEADING ENDS-->
+
+                               <!--INPUT FOR TITLE AND QUESTION-->
+      <div id="subject" class="mt-2"><input type="text"  id="getSubject" placeholder="Subject..."/ ></div>
+      <div class="question mt-2" ><textarea id="getQuestion" cols="90" rows="10" placeholder="Question..."></textarea></div>
+                               <!--INPUT FOR TITLE AND QUESTION ENDS-->
+
+
+                               <!--TITLE AND QUESTION SUBMIT BUTTON-->
+      <div id="Rbutn"><button class="btn btn-primary mt-2" id="questionSubmitButton">submit</button></div>
+      </div>
+                                 <!--TITLE AND QUESTION SUBMIT BUTTON-->
+
+                             <!--STARTING DIV ENDS-->
+
+
+
+                            <!--DIV AFTER CLICKING ON QUESTION-->
+  <div id="afterClick">
+                      <!-- QUESTIONS DIV -->
+    <div id="afterClickQuestions">
+
+                       <!-- QUESTIONS HEADING-->       
+      <h3 class="mt-3 afterHeadingRight">Questions</h3>
+                        <!-- QUESTIONS HEADING ENDS -->
+
+                      <!-- TITLE AND QUESTIONS IN QUESTIONS DIV -->
+      <div class="p-4 greyColor" id="titleAndQuestion">
+      </div>
+                      <!-- TITLE AND QUESTIONS IN QUESTIONS DIV ENDS-->
+      <button class="btn btn-primary mt-2">Resolve</button>
+    </div>
+
+
+
+                        <!-- RESPONSE DIV -->
+    <div id="response">
+                         <!-- RESPONSE HEADING -->
+      <h3 class="mt-3 afterHeadingRight">Response</h3>
+                         <!-- RESPONSE HEADING ENDS -->
+
+
+                         <!-- RESPONSES  -->
+      <div class="mt-3 greyColor" id="responseAns" ></div>
+                           <!-- RESPONSES ENDS-->
+
+                         <!--ADD RESPONSE DIV -->
+      <div class="addResponse">
+                         <!-- ADD RESPONSE HEADING -->
+        <h3 class="mt-3 afterHeadingRight">Add Response</h3>
+                         <!--ADD RESPONSE HEADING ENDS-->
+
+
+                         <!-- NAME AND COMMENT INPUT -->
+        <div class="mt-2 name"><input type="text"  id="getName" placeholder="Enter Name.."/ ></div>
+        <div class="mt-2 question"><textarea  id="getComment" cols="90" rows="10" placeholder="Enter Comment.."></textarea></div>
+                         <!-- NAME AND COMMENT INPUT ENDS -->
+
+                         <!--NAME AND COMMENT SUBMIT BUTTON  -->
+        <div><button id="responseSubmitButton" class="btn btn-primary mt-2" >submit</button> </div>
+                          <!--NAME AND COMMENT SUBMIT BUTTON ENDS-->
+      </div>
+                          <!--ADD RESPONSE DIV ENDS-->
+
+    </div>
+                            <!--DIV AFTER CLICKING ON QUESTION-->
+      
+
+
+  </div>
+  </div> 
+  </div>
+
+                          <!-- RIGTHSIDE END-->
+</div>
+
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+                                   <!--BODY ENDS-->
+
+
+
+
+
+
+<!-- 
+<div id="mainDIV">
+  <div id="leftDiv">
+        LEFT SIDE
+        <div id="Left">
+
+            <span id="sButton"><button id="btn">New Question form</button></span>&emsp;
+            <span id="sInput"><input type="text" id="search" placeholder="search question..."/>
+          
+        </div>
+        <hr/>
+        <div id="Questions"></div>
+  </div>
+
+ 
+    RIGHT SIDE
+  <div id="rightDiv">
+    <span id="rHeading"><h1>Welcome To Discussion Portal!</h1></span>
+    <span>Enter a subject and question to get started</span><br><br>
+    <span id="rSubject"><input type="text" id="subject" placeholder="Subject"/></span>
+  </div>
+</div> -->
