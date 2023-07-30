@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book</title>
+	<!-- BOOTSTRAP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<!-- Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="BooksKart.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- JQUERY -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- FontAWESOME -->
+	<link href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" rel="stylesheet">
+	<!-- FLickity CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<!-- FLICKTY JavaScript -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>	
+
+</head>
+<body>
+	
+	<!--NAVBAR-->
+	<nav class="navbar navbar-expand-lg navbar-light ">
+		<div class="container-fluid">
+		  <a class="navbar-brand lgt" href="#">boOksCaRt</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+			  <li class="nav-item">
+				<a class="nav-link lgt" href="#Comics">Comics</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link lgt" href="#Education">Education</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link lgt " href="#Poetry" tabindex="-1" aria-disabled="true">Poetry</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link lgt " href="../Fa4Project/Loginpage/Login_Page.html" tabindex="-1" aria-disabled="true">Login/SignUp</a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle lgt" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  More
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+					<li><a class="dropdown-item lgt" href="#Novels">Novels</a></li>
+				  <li><a class="dropdown-item lgt" href="#About">About Us</a></li>
+				  
+				  <li><a class="dropdown-item lgt" id="dark">Dark Mode &nbsp &nbsp<i class="fas fa-moon"></i></a></li>
+				  <li><a class="dropdown-item lgt " id="light">Light Mode &nbsp &nbsp<i class="fas fa-sun"></i></a></li>
+				</ul>
+			  </li>
+
+			  
+			  
+			</ul>
+			<form class="d-flex">
+			  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-success" type="submit">Search</button>
+			 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+			  <li class="nav-item">
+				<a class="nav-link lgt "  aria-disabled="true"><i class="fas fa-shopping-cart"></i></a>
+			  </li>
+			  </ul>
+			  </div>
+			</form>
+			
+		  </div>
+		</div>
+	  </nav>
+	<!--NAVBAR CLOSE-->
+
+
+
+<!-- Flickity CArousel -->
+<div class="carousel" data-flickity='{ "wrapAround": true,  "autoPlay": true }'>
+	<div class="carousel-cell">
+		<img src="CPic/hp.jpg"   class="w-100 h-100" alt="...">
+	</div>
+	<div class="carousel-cell">
+		<img src="CPic/sp.jpg"   class="w-100 h-100" alt="...">
+		
+	</div>
+	
+	<div class="carousel-cell">
+		<img src="CPic/Naruto.jpg"   class="w-100 h-100" alt="...">
+	</div>
+	<div class="carousel-cell">
+		<img src="CPic/hG.jpg"   class="w-100 h-100" alt="...">
+	</div>
+	<div class="carousel-cell">
+		<img src="CPic/lr.jpg"   class="w-100 h-100" alt="...">
+	</div>
+  </div>
+  
+<!--CLOSE-->  
+
+
+<!-- JQUERY CAROUSEL -->
+
+  <!-- <div class="Cont">
+	  <div class="slider-outer">
+		<i class="fas fa-chevron-left prev" alt="prev"></i>
+		<div class="slider-inner">
+			<img src="Pics\naruto.jpg" class="active">
+			<img src="Pics\fantasticBeast.jpg">
+			<img src="Pics\girl.jpg">
+			<img src="Pics\iMax.jpg">
+			
+
+
+		</div>
+
+		<i class="fas fa-chevron-right next" alt="next"></i>
+	  </div>
+  </div>  -->
+<!-- CLOSE -->
+
+
+
+<!-- BOOK SECTION -->
+<div class="container-fluid">
+	<div class="wst" id="Comics"></div>
+	<div class="books-Heading " >
+		<h1 class="lgt text-warning">Comics </h1> 
+		
+	</div>
+	<div class="lft"><a href='Section/Comic-Section/index.html'>
+		<button class="viewBut bg-warning" > View all</button></a>
+		</div>
+	
+	<div class="bookShelf" >
+		
+		<div class="book "><a href="Section/Comic-Section/Comics/FairyTail/IndexDescription.html"><img src="Pics\fairyTale.jpg"/></a>
+			<p class="lgt shdw"><br>Fairy Tale</p>
+		</div>
+		<div class="book"><a href="Section/Comic-Section/Comics/Naruto/IndexDescription.html"><img src="Pics\naruto.jpg"/></a>
+			<p class="lgt shdw "> <br>Naruto</p>
+		</div>	
+		<div class="book"><img src="Pics/ironMan.jpg"/>
+			<p class="lgt shdw"><br>Iron Man</p>
+		</div>
+		<div class="book"><img src="Pics\harryPotter.jpg"/>
+			<p class="lgt shdw"><br>Harry potter</p>
+		</div>
+		<div class="book"><img src="Pics\fantasticBeast.jpg"/>
+			<p class="lgt shdw"><br>fantastic Beast</p>
+		</div>
+		<div class="book"><img src="Pics\Shinchan.jpg"/>
+			<p class="lgt shdw"><br>Shinchan</p>
+		</div>
+	
+	</div>
+
+	
+
+	<div class="wst" id="Education"></div>
+<div class="books-Heading" >
+		<h1 class="lgt text-info">Education</h1>
+	</div>
+	
+	<div class="lft"><a href='Section/Education-Section/index.html'>
+		<button class="viewBut bg-info " > View all</button></a>
+		</div>
+	<div class="bookShelf" >
+		<div class="book"><a href="Section/Education-Section/Education/TheSmartestKid/IndexDescription.html"><img src="Pics\theSKid.jpg"/></a>
+			<p class="lgt shdw"><br>The Smartest Kid</p>
+		</div>
+		<div class="book"><img src="Pics\diaryOfYGirl.jpg"/>
+			<p class="lgt shdw"><br>The Diary Of Young Girl</p>
+		</div>
+		<div class="book"><img src="Pics\EMechanics.jpg"/>
+			<p class="lgt shdw"><br>Engineering Mechanics</p>
+		</div>
+		<div class="book"><img src="Pics\spokenEng.jpg"/>
+			<p class="lgt shdw"><br>Spoken English</p>
+		</div>
+		<div class="book"><img src="Pics\theIntInvester.jpg"/>
+			<p class="lgt shdw"><br>The Intelligent Investors </p>
+		</div>
+		<div class="book"><img src="Pics\biology.jpg"/>
+			<p class="lgt shdw"><br>Biology 12th </p>
+		</div>
+	</div>
+
+
+
+	<div class="wst" id="Poetry"></div>
+<div class="books-Heading" id="Poetry">
+		<h1 class="lgt text-success">Poetry</h1>
+	</div>
+	
+	<div class="lft"><a href='Section/Poetry-Section/index.html'>
+		<button class="viewBut bg-success " > View all</button></a>
+		</div>
+	<div class="bookShelf">
+		<div class="book"><a href="Section/Poetry-Section/Poetry/LeaveTheWorldBehind/IndexDescription.html"><img src="Pics\leaveTheWorldBehind.jpg"/></a>
+			<p class="lgt shdw"><br>Leave The World Behind </p>	
+		</div>
+
+		<div class="book"><img src="Pics\theShadesOfMissingU.jpg"/>
+			<p class="lgt shdw"><br>The Shades Of Missing You</p>
+		</div>
+		<div class="book"><img src="Pics\whereTheCrawdadSings.png"/>
+			<p class="lgt shdw"><br>Where The Crawdads Sings </p>	
+		</div>
+		<div class="book"><img src="Pics\myHeartBleeds.jpg"/>
+			<p class="lgt shdw"><br>My Heart Bleeds </p>
+		</div>
+		<div class="book"><img src="Pics\citizen.jpg"/>
+			<p class="lgt shdw"><br>Citizen </p>
+		</div>
+		<div class="book"><img src="Pics\theBLueEyes.jpg"/>
+			<p class="lgt shdw"><br>The BLue Eyes </p>
+		</div>
+	</div>
+<div>
+
+	<div class="wst" id="Novels"></div>
+<div class="books-Heading" id="Novels">
+		<h1 class="lgt text-danger "  >Novels</h1>
+	</div>
+	<div class="lft"><a href='Section/Novel-Section/index.html'>
+		<button class="viewBut bg-danger " > View all</button></a>
+		</div>
+		<div class="bookShelf">
+			<div class="book"><a href="Section/Novel-Section/Novels/RedQueen/IndexDescription.html"><img src="Pics\redQueen.jpg"/></a>
+				<p class="lgt shdw"><br>Red Queen </p>
+			</div>
+			<div class="book"><img src="Pics\aCastleInClouds.jpg"/>
+				<p class="lgt shdw"><br>A Castle In Clouds </p>	
+			</div>
+			
+			<div class="book"><img src="Pics\theKiteRunner.jpg"/>
+				<p class="lgt shdw"><br>The Kite Runner </p>
+			</div>
+			<div class="book"><img src="Pics\thenSheWasGone.jpg"/>
+				<p class="lgt shdw"><br>Then She Was Gone </p>
+			</div>
+			<div class="book"><img src="Pics\ghostOfABottle.jpg"/>
+				<p class="lgt shdw"><br>Ghost of a bottle </p>
+			</div>
+			<div class="book"><img src="Pics\gulliverTravels.jpg"/>
+				<p class="lgt shdw"><br>Gulliver's Travels </p>
+			</div>
+		</div>
+	
+<!-- BOOK SECTION CLOSE -->
+
+	<!-- ABOUT US -->
+
+	<div class="about-section  text-center" id="About">
+		<h1 class="lgt">About Us</h1>
+	</div>
+
+	<h2 class="text-center lgt " >Our Team</h2>
+	<div class="row">
+		<div class="column">
+			<div class="card">
+				<img src="" alt='...' />
+				<div class="containr">
+					<h2>AKSHIT THAKUR</h2>
+					<p class="title">.......</p>
+					<p>thakur@gmail.com</p>
+					<p><button class="button  text-center">Contact</button></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="column">
+			<div class="card">
+				<img src="..." alt='...' />
+				<div class="containr">
+					<h2>Nishkarsh</h2>
+					<p class="title">.......</p>
+					<p>nishkarsh@gmail.com</p>
+					<p><button class="button  text-center">Contact</button></p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="column">
+			<div class="card">
+				<img src="..." alt='...' />
+				<div class="containr">
+					<h2>HRishab</h2>
+					<p class="title">.......</p>
+					<p>hrishab@gmail.com</p>
+					<p><button class="button  text-center">Contact</button></p>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="column">
+			<div class="card">
+				<img src="..." alt='...' />
+				<div class="containr">
+					<h2>AKSHIT Dhiman</h2>
+					<p class="title">.......</p>
+					<p>dhiman@gmail.com</p>
+					<p><button class="button  text-center">Contact</button></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ABOUT US CLOSE -->
+<!-- Scripting -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function(){
+			$("#dark").click(function(){
+				
+				$("body").css("background-color", "black");
+				$(".lgt").css("color","white");
+				$(".navbar").css("background-color", "black");
+				$(".dropdown-menu").css("background-color", "black");
+				$(".dot").css("background-color", "white");
+				$(".carousel").css("background-color", "black");
+				$(".shdw").css("text-shadow","2px 2px 10px white");
+			})
+				
+			$("#light").click(function(){
+				
+				$("body").css("background-color", "rgba(215, 221, 220, 0.83)");
+				$(".lgt").css("color","Black");
+				$(".navbar").css("background-color", "rgba(215, 221, 220, 0.83)");
+				$(".dropdown-menu").css("background-color", "rgba(215, 221, 220, 0.83)");
+				$(".dot").css("background-color", "black");
+				$(".carousel").css("background-color", "rgba(215, 221, 220, 0.83)");
+				$(".shdw").css("text-shadow","2px 2px 10px black");
+			})
+
+
+			// $('.next').click(function(){
+			// 	var currentImg=$('.active');
+			// 	var nextImg= currentImg.next();
+
+			// 	if(nextImg.length){
+			// 		currentImg.removeClass("active").css('z-index',-10);
+			// 		nextImg.addClass("active").css('z-index',10);
+			// 	}
+			// })	
+
+			// $('.prev').click(function(){
+			// 	var currentImg=$('.active');
+			// 	var prevImg= currentImg.prev();
+
+			// 	if(prevImg.length){
+			// 		currentImg.removeClass("active").css('z-index',-10);
+			// 		prevImg.addClass("active").css('z-index',10);
+			// 	}
+			// })	
+			
+		})
+
+
+	</script>
+
+	<!-- Scripting ends -->
+	</div>
+</body>
+</html>
